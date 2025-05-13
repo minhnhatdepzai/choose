@@ -7,11 +7,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px; /* Thêm size body lớn hơn một chút */
     line-height: 1.6;
     color: #333;
     background-color: #f5f5f5;
-    padding: 10px;
+    padding: 20px; /* Padding cho body để có không gian hơn */
 }
 
 /* Mobile First Styles */
@@ -19,24 +19,24 @@ header {
     background-color: #4CAF50; /* Header color */
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0; /* Tăng padding cho header */
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 30px; /* Tăng kích thước font cho header */
 }
 
 section.content {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px; /* Khoảng cách giữa các phần tử */
     padding: 15px;
 }
 
 .box {
     background-color: #FF9800; /* Section color */
     color: white;
-    padding: 20px;
+    padding: 25px; /* Tăng padding để làm phần tử lớn hơn */
     border-radius: 5px;
     text-align: center;
 }
@@ -45,18 +45,27 @@ footer {
     background-color: #da952d; /* Footer color */
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px; /* Tăng padding cho footer */
     margin-top: 20px;
 }
 
 /* Media Queries for Screens Larger than 768px */
 @media screen and (min-width: 769px) {
+    body {
+        font-size: 20px; /* Tăng font size cho body trên màn hình lớn */
+    }
+
+    header, footer {
+        padding: 30px 0; /* Tăng padding cho header và footer */
+    }
+
     section.content {
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .box {
-        width: 30%;
+        width: 100%; /* Đảm bảo các box vẫn xếp chồng lên nhau */
+        margin-bottom: 15px; /* Thêm khoảng cách giữa các box */
     }
 }
