@@ -7,25 +7,21 @@
 
 body {
     font-family: Arial, sans-serif;
-    font-size: 18px; /* Thêm size body lớn hơn một chút */
-    line-height: 1.6;
+    font-size: 18px;
     color: #333;
     background-color: #f5f5f5;
-    padding: 20px; /* Padding cho body để có không gian hơn */
+    padding: 20px;
 }
 
-/* Mobile First Styles */
+/* Header */
 header {
-    background-color: #4CAF50; /* Header color */
+    background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 15px 0; /* Tăng padding cho header */
+    padding: 15px 0;
 }
 
-h1 {
-    font-size: 30px; /* Tăng kích thước font cho header */
-}
-
+/* Content Box */
 section.content {
     display: flex;
     justify-content: center;
@@ -33,44 +29,33 @@ section.content {
 }
 
 .box {
-    background-color: #FF9800; /* Section color */
+    background-color: #FF9800;
     color: white;
-    padding: 25px; /* Tăng padding để làm phần tử lớn hơn */
+    padding: 25px;
     border-radius: 5px;
-    width: 100%; /* Đảm bảo box chiếm toàn bộ chiều rộng */
+    width: 100%;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Khoảng cách giữa các phần tử trong box */
+    gap: 10px;
 }
 
-.item {
-    text-align: center;
+.box h2 {
+    font-size: 24px;
 }
 
 footer {
-    background-color: #da952d; /* Footer color */
+    background-color: #da952d;
     color: white;
     text-align: center;
-    padding: 15px; /* Tăng padding cho footer */
+    padding: 15px;
     margin-top: 20px;
 }
 
-/* Media Queries for Screens Larger than 768px */
+/* Responsive for Screens Larger than 768px */
 @media screen and (min-width: 769px) {
-    body {
-        font-size: 20px; /* Tăng font size cho body trên màn hình lớn */
-    }
-
-    header, footer {
-        padding: 30px 0; /* Tăng padding cho header và footer */
-    }
-
-    section.content {
-        justify-content: center;
-    }
-
     .box {
-        width: 70%; /* Giảm kích thước của box khi màn hình lớn hơn 768px */
-        margin: 0 auto; /* Canh giữa box */
+        width: 70%;
+        margin: 0 auto;
     }
 }
