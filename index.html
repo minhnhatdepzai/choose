@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <link rel="stylesheet" href="./styles.css">
-        
-    </head> 
-    <body>
-        <div class="container">
-            <div >
-                <h1 class = "header_text">Bạn có rãnh vào ngày mai không?</h1>
-                <h1 class = "header_text">Bạn có muốn đi coi phim với tôi vào ngày mai không?</h1>
-            </div>
-            <div class="gif_container">
-                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute animated illustration">
-            </div>
-            <div class = "buttons">
-                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
-                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
-                <script>
-                    function nextPage() {
-                        window.location.href = "yes.html";
-                    }
-                    
-                    function moveButton() {
-                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
-                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
-                        document.getElementById('noButton').style.left = `${x}px`;
-                        document.getElementById('noButton').style.top = `${y}px`;
-                    }
-                </script> 
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My First Webpage</h1>
+    </header>
+    
+    <section class="content">
+        <div class="box">
+            <h2>What?</h2>
+            <p>Used to ask about the reason for something</p>
         </div>
-       
-    </body> 
+        <div class="box">
+            <h2>Where?</h2>
+            <p>Used when referring to a particular stage in a process or activity</p>
+        </div>
+        <div class="box">
+            <h2>How?</h2>
+            <p>Used to ask about someone's physical or emotional state</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Resize the browser window to see how the content responds to the resizing.</p>
+    </footer>
+</body>
 </html>
